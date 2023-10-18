@@ -1,25 +1,13 @@
-# Serenity JUnit Starter project
+# Talking Clock Kata
+We would like the text to be simple to read, so we will round the current time to the next full 5 minutes
+(Definitely more convenient for the user than rounding down...).
+We will use a 12-hour clock (e.g. 13:00 is "one").
+For this particular clock we will not use "AM" and "PM", just the time
+(and let the user guess which half of the day it is ;-) )
 
-Get started quickly with Serenity BDD and JUnit 5 with this simple starter project. 
+The time will be passed in a 24-hour format, and may contain (0, 0) as well as (24, 0).
 
-## Get the code
-
-Click on the [Use This Template button](https://github.com/serenity-bdd/serenity-junit-starter/generate) to create a new project in your own Github account. 
-
-Or simply [download a zip](https://github.com/serenity-bdd/serenity-junit-starter/archive/master.zip) file.
-
-## Running the tests under Maven
-
-The template project comes with both Maven and Gradle build scripts. To run the tests with Maven, open a command window and run:
-
-  ./mvnw clean verify
-
-## Use Gradle
-
-For GRADLE, pen a command window and run:
-
-  ./gradlew test 
-
-## Viewing the reports
-
-Both of the commands provided above will produce a Serenity test report in the `target/site/serenity` directory. Go take a look!
+For example:
+- "12:00" should return "noon"
+- "0:00" should return "midnight"
+-
